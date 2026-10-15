@@ -10,7 +10,7 @@ def ejecutar_interfaz_cajero():
     if validar_numero_positivo(monto_input):
         subtotal_ingresado = float(monto_input)
         cliente_input = input("Ingrese tipo de cliente (VIP / REGULAR): ")
-  
+
         # Enviamos los datos al cerebro (logica_negocio.py)
         factura = procesar_factura(subtotal_ingresado, cliente_input)
 
